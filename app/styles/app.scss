@@ -1,5 +1,7 @@
 @import 'bower_components/materialize/sass/materialize';
-
+.card-title {
+  font-weight: bold;
+}
 /* FIXME: Workaround for https://github.com/Dogfalo/materialize/issues/1079 */
 @each $mdi-icon-name, $mdi-icon-value in $mdi-list-icons {
   .#{$mdi-prefix}#{$mdi-icon-name}:before {
