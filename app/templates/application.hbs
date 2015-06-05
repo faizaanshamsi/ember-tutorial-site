@@ -1,3 +1,26 @@
-<h2 id="title">Welcome to Ember.js</h2>
+<div>
+  {{#md-navbar name='Ember Tutorial' class='indigo'}}
+    {{#link-to 'intro' tagName='li'}}
+      <a>Introduction</a>
+    {{/link-to}}
+    {{#link-to 'installation' tagName='li'}}
+      <a>Getting Installed</a>
+    {{/link-to}}
+    {{#link-to 'what-you-will-build' tagName='li'}}
+      <a>What You'll Build</a>
+    {{/link-to}}
+    {{#link-to 'setting-up-project' tagName='li'}}
+      <a>Getting Set Up</a>
+    {{/link-to}}
+    {{#link-to 'adding-your-first-model' tagName='li'}}
+      <a>Adding Your First Model</a>
+    {{/link-to}}
+  {{/md-navbar}}
+</div>
 
-{{outlet}}
+<div class="container">
+  {{outlet}}
+</div>
+
+{{!-- ember-cli-materialize modal container --}}
+{{md-modal-container}}
