@@ -6,10 +6,9 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('intro');
-  this.route('installation');
-  this.route('setting-up-project');
-  this.route('adding-your-first-model');
+  this.route('intro', function() {});
+  this.route('adding-your-first-model', function() {
+  });
 });
 
 export default Router;
